@@ -50,12 +50,31 @@
 	a{
 		word-break: break-word;
 	}
+	input{
+		width: 100%;
+		font-size: 1.2rem;
+		padding: 1rem;
+		background-color: #f1f1f1;
+		border: none;
+		margin-bottom: 1rem;
+	}
+	button{
+		padding: 1rem;
+		font-size: 1.2rem;
+		background-color: #17ac10;
+		color: white;
+		border-radius: 5px;
+		border: none;
+	}
+	form{
+	width: 90%;
+	}
 </style>
 <article>
 	<p>Welcome to New Computer Working Group</p>
 
 	<p><small>Latest news:</small></p>
-	<p><mark>We are holding an event on Dec. 10th in NY → <a href="https://www.eventbrite.com/e/peer-to-peer-web-viewing-party-tickets-41015181512" title="eventbrite link">Peer to Peer Viewing Party</a></mark></p>
+	<p><mark>We held an event on Dec. 10th in NY → <a href="dat://peer-to-peer-web.com/los-angeles" title="peer-to-peer-web">Peer to Peer Viewing Party</a></mark></p>
 
 	<p><em>"The form and feel of a New Computer should be liquid and wholly arbitrary, yet perfectly suited to the context at hand. An ideal New Computer will be representative and one with its human user, an extension of one’s will, mind, body, spirit." (<a href="https://edouard.us/new-computers/" title="new computers essay">more</a>)</em></p>
 
@@ -63,8 +82,19 @@
 
 	<p>We organize on <a href="https://www.are.na/edouard-u/new-computer-working-group" title="are.na">Are.na</a> and <a href="https://github.com/new-computers" title="github">GitHub</a>. We are an open para-institution and welcome participation and contribution from all. Joining is as simple as following the are.na page.</p>
 	<p>We participate in a distrubted network of organizations including <a href="http://learning-gardens.co/">Learning Gardens</a> and <a href="http://open-end-ed.org/">Open-end-ed</a>.</p>
-
-	<p>↓</p>
-
+	<p>
+		Want to get notified of future events and workshops? ↓
+	</p>
+	<form id="contactform" action="https://formsubmit.io/send/callil.capuozzo@gmail.com" method="POST">
+			<div>
+				<input name="name" placeholder="Name" type="text" id="name">
+				<input name="email" placeholder="Email" type="email" required="true" id="email">
+			</div>
+			<div>
+					<input name="question" type="text" placeholder="What's your new computer?" id="question">
+			</div>
+	    <input name="callil.capuozzo" type="text" style="display:none">
+			<button type="submit">Submit</button>
+	</form>
 </article>
 <iframe class="arena-iframe" width="100%" height="100%" src="https://www.are.na/edouard-u/new-computer-working-group/embed"></iframe>
