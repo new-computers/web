@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>New Computer Working Group</title>
+    <title>New Computer Working Group listserv</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,24 +11,19 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,800" rel="stylesheet"> -->
 		<link rel="shortcut icon" href="f.png" type="image/x-icon">
     <style>
-		/* @import url('https://rsms.me/inter/inter-ui.css'); */
-
       .worksans {
         font-family: 'Work Sans', sans-serif;
         font-weight: 400;
       }
       .arial {
         font-family: 'Arial', sans-serif;
-				line-height: 1.4;
-				letter-spacing: 1px;
-				/* font-family: 'Inter UI', sans-serif; */
       }
       .bg-latte { background-color: #F2EDE7 }
       .latte { color: #F2EDE7 }
 
-			body p{
-				font-size: 5rem;
-			}
+      body p{
+        font-size: 72px;
+      }
 
       input{
         width: 100%;
@@ -62,23 +57,19 @@
     </style>
   </head>
 
-  <body class="f4 arial pa4">
-    <p class="ma0">New Computer Working Group</p>
-    <img class="w-100" src="/images/ncwg.svg" >
-    <p class="tr">— is a group of people interested in what's next.</p>
-    <p class="heavy">We write guides, stories, and LARP about the future of computation.</p>
-    <p class="heavy">Soon we'll be building new computers you can use for work or play, or both.</p>
+  <body class="f4 arial mw8 center pa4">
+    <p class="">New Computer Working Group Listserv</p>
 
-    <div class="mt5 heavy">
-      <p>
-        <a href="https://github.com/new-computers/">making here (github) ↪</a>
-      </p>
-      <p>
-        <a class="" href="https://www.are.na/edouard-u/new-computer-working-group">reading here (are.na) ↪</a>
-      </p>
-			<p class="">
-	      <a class="" href="/form.html">listserv here (email) ↪</a>
-	    </p>
-    </div>
+    <form id="contactform" action="https://formsubmit.io/send/callil.capuozzo@gmail.com" method="POST">
+      <div>
+        <input name="name" placeholder="Name" type="text" id="name">
+        <input name="email" placeholder="Email" type="email" required="true" id="email">
+      </div>
+      <div>
+          <input name="question" type="text" placeholder="What's a new computer?" id="question">
+      </div>
+      <input name="callil.capuozzo" type="text" style="display:none">
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
