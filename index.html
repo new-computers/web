@@ -1,100 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="f.png" type="image/x-icon">
-<title>New Computer Working Group</title>
-<style>
-	body{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding:0 .62em;
-		font-size:1.2rem;
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	  text-rendering: optimizeLegibility;
-	  -webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale;
-	}
-	h1,h2,h3 {
-		line-height:1.2;
-	}
-	@media print{
-		body{
-			max-width:none
-		}
-	}
-	article{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		margin: 1rem auto;
-		max-width: 40rem;
-	}
+<html>
+  <head>
+    <title>New Computer Working Group</title>
 
-	.arena-iframe{
-		border: 1px solid #e7e7e5;
-		-webkit-box-shadow: 4px 4px 4px #f7f7f7;
-		box-shadow: 4px 4px 4px #f7f7f7;
-		height: 750px !important;
-		margin: 4em;
-		padding: 1px;
-		display: block;
-    max-width: 80rem;
-    vertical-align: bottom;
-	}
-	img{
-		width: 100%;
-    height: 100%;
-	}
-	a{
-		word-break: break-word;
-	}
-	input{
-		width: 100%;
-		font-size: 1.2rem;
-		padding: 1rem;
-		background-color: #f1f1f1;
-		border: none;
-		margin-bottom: 1rem;
-	}
-	button{
-		padding: 1rem;
-		font-size: 1.2rem;
-		background-color: #17ac10;
-		color: white;
-		border-radius: 5px;
-		border: none;
-	}
-	form{
-	width: 90%;
-	}
-</style>
-<article>
-	<p>Welcome to New Computer Working Group</p>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<p><small>Latest news:</small></p>
-	<p><mark>We held an event on Dec. 10th in NY → <a href="dat://peer-to-peer-web.com/los-angeles" title="peer-to-peer-web">Peer to Peer Viewing Party</a></mark></p>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,800" rel="stylesheet"> -->
+		<link rel="shortcut icon" href="f.png" type="image/x-icon">
+    <style>
+      .worksans {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+      }
+      .arial {
+        font-family: 'Arial', sans-serif;
+      }
+      .bg-latte { background-color: #F2EDE7 }
+      .latte { color: #F2EDE7 }
 
-	<p><em>"The form and feel of a New Computer should be liquid and wholly arbitrary, yet perfectly suited to the context at hand. An ideal New Computer will be representative and one with its human user, an extension of one’s will, mind, body, spirit." (<a href="https://edouard.us/new-computers/" title="new computers essay">more</a>)</em></p>
+      input{
+        width: 100%;
+        padding: 1rem 0px 1rem 0px;
+        line-height: 1rem;
+        border: none;
+        border-bottom: 1px solid #f1f1f1;
+        color: #f1f1f1;
+        margin-bottom: 1rem;
+      }
+      input:focused{
+        color: #000;
+      }
+      button{
+        color: blue;
+        border: none;
+        padding: 0px;
+        margin-top: 1rem;
+        cursor: pointer;
+				background-color: rgba(0,0,0,0);
+      }
+      form{
+        width: 100%;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    </style>
+  </head>
 
-	<img src="images/newcomputer.png" title="new computers" />
+  <body class="f4 arial mw8 center pa4">
+    <p class="">New Computer Working Group</p>
+    <img class="w-100" src="/images/ncwg.svg" >
+    <p class="tr">— is a group of people interested in what's next.</p>
+    <p class="">We write guides, stories, and LARP about the future of computation.</p>
+    <p class="">Soon we'll be building new computers you can use for work or play, or both.</p>
 
-	<p>We organize on <a href="https://www.are.na/edouard-u/new-computer-working-group" title="are.na">Are.na</a> and <a href="https://github.com/new-computers" title="github">GitHub</a>. We are an open para-institution and welcome participation and contribution from all. Joining is as simple as following the are.na page.</p>
-	<p>We participate in a distributed network of organizations including <a href="http://learning-gardens.co/">Learning Gardens</a> and <a href="http://open-end-ed.org/">Open-end-ed</a>.</p>
-	<p>
-		Want to get notified of future events and workshops? ↓
-	</p>
-	<form id="contactform" action="https://formsubmit.io/send/callil.capuozzo@gmail.com" method="POST">
-			<div>
-				<input name="name" placeholder="Name" type="text" id="name">
-				<input name="email" placeholder="Email" type="email" required="true" id="email">
-			</div>
-			<div>
-					<input name="question" type="text" placeholder="What's your new computer?" id="question">
-			</div>
-	    <input name="callil.capuozzo" type="text" style="display:none">
-			<button type="submit">Submit</button>
-	</form>
-</article>
-<iframe class="arena-iframe" width="100%" height="100%" src="https://www.are.na/edouard-u/new-computer-working-group/embed"></iframe>
+    <div class="mt5">
+      <p>
+        <a href="https://github.com/new-computers/">making here ↪</a>
+      </p>
+      <p>
+        <a class="" href="https://www.are.na/edouard-u/new-computer-working-group">reading here ↪</a>
+      </p>
+    </div>
+
+    <p class="mt5 pt4">
+      Want to get notified of future events and workshops? ↓
+    </p>
+
+    <form id="contactform" action="https://formsubmit.io/send/callil.capuozzo@gmail.com" method="POST">
+      <div>
+        <input name="name" placeholder="Name" type="text" id="name">
+        <input name="email" placeholder="Email" type="email" required="true" id="email">
+      </div>
+      <div>
+          <input name="question" type="text" placeholder="What's a new computer?" id="question">
+      </div>
+      <input name="callil.capuozzo" type="text" style="display:none">
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
