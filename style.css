@@ -50,3 +50,40 @@ code { background: #eee; padding: 5px }
 @media (max-width: 1000px) {
 	.m-1 { width: 100% }
 }
+
+
+.arial{
+	font-size: 5rem;
+	font-family: 'Arial', sans-serif;
+	line-height: 1.4;
+	letter-spacing: 1px;
+}
+input{
+	width: 100%;
+	padding: 1rem 0px 1rem 0px;
+	line-height: 1rem;
+	border: none;
+	border-bottom: 1px solid #f1f1f1;
+	color: #f1f1f1;
+	margin-bottom: 1rem;
+}
+input:focused{
+	color: #000;	
+}
+button{
+	color: blue;
+	border: none;
+	padding: 0px;
+	margin-top: 1rem;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0);
+}
+form{
+	width: 100%;
+}
+a {
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
