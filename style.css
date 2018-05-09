@@ -1,54 +1,19 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
-}
+} */
 
 body {
 	font-family: 'Arial', sans-serif;
 	font-size: 25px;
 	font-weight: 300;
-	color: black;
-	background: white;
-	padding: 35px;
+	padding: 2rem;
+	line-height: 1.4;
+	letter-spacing: .5px;
 }
 
 header {
 	margin-bottom: 100px;
-}
-
-.drop { margin-top: 60px }
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-a:not(.nbb) {
-	border-bottom: 1px solid #cccccb;
-	padding-bottom: 8px;
-}
-
-p {
-	margin: 40px 0;
-}
-
-.pb2 { margin-bottom: 80px }
-
-code { background: #eee; padding: 5px }
-
-.todo {
-	color: #cccccb;
-}
-
-.fr { float: right }
-.dib { display: inline-block }
-.fl { float: left }
-
-.\31{width:100.000%}
-.\31 \2f 2{width:50.000%}
-
-@media (max-width: 1000px) {
-	.m-1 { width: 100% }
 }
 
 
@@ -58,6 +23,7 @@ code { background: #eee; padding: 5px }
 	line-height: 1.4;
 	letter-spacing: 1px;
 }
+
 input{
 	width: 100%;
 	padding: 1rem 0px 1rem 0px;
@@ -81,9 +47,46 @@ button{
 form{
 	width: 100%;
 }
+
+p{
+	max-width: 720px;
+	/* margin: 20px 0; */
+}
+
+.arial p {
+	max-width: 100%;
+}
+
+.drop { margin-top: 60px }
+
 a {
 	text-decoration: none;
 }
-a:hover{
+
+a:hover {
 	text-decoration: underline;
 }
+
+a:not(.nbb) {
+	padding-bottom: 8px;
+}
+
+.pb2 { margin-bottom: 80px }
+
+code { background: #eee; padding: 5px }
+
+.todo {
+	color: #cccccb;
+}
+
+.fr { float: right }
+.dib { display: inline-block }
+.fl { float: left }
+
+.\31{width:100.000%}
+.\31 \2f 2{width:50.000%}
+
+@media (max-width: 1000px) {
+	.m-1 { width: 100% }
+}
+
