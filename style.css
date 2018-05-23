@@ -1,89 +1,28 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: 'Arial', sans-serif;
-	font-size: 25px;
-	font-weight: 300;
-	color: black;
-	background: white;
-	padding: 35px;
-}
-
-header {
-	margin-bottom: 100px;
-}
-
-.drop { margin-top: 60px }
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-a:not(.nbb) {
-	border-bottom: 1px solid #cccccb;
-	padding-bottom: 8px;
-}
-
-p {
-	margin: 40px 0;
-}
-
-.pb2 { margin-bottom: 80px }
-
-code { background: #eee; padding: 5px }
-
-.todo {
-	color: #cccccb;
-}
-
-.fr { float: right }
-.dib { display: inline-block }
-.fl { float: left }
-
-.\31{width:100.000%}
-.\31 \2f 2{width:50.000%}
-
-@media (max-width: 1000px) {
-	.m-1 { width: 100% }
-}
+/* Colors */
+.ncwg-blue {color: #231E1E;}
+.ncwg-yellow {color: #FFC864;}
+.ncwg-red {color: #FF4621;}
 
 
-.arial{
-	font-size: 5rem;
-	font-family: 'Arial', sans-serif;
-	line-height: 1.4;
-	letter-spacing: 1px;
+
+/* Typography/Font Stuff */
+.f-ncwg { font-size: 1em; }
+@media screen and (min-width: 30em) {
+  .f-ncwg { font-size: 3.5em; }
 }
-input{
-	width: 100%;
-	padding: 1rem 0px 1rem 0px;
-	line-height: 1rem;
-	border: none;
-	border-bottom: 1px solid #f1f1f1;
-	color: #f1f1f1;
-	margin-bottom: 1rem;
+.arial {font-family: "Arial", sans-serif;}
+.stretch {
+  -webkit-transform: scale(1,2.2);
+          transform: scale(1,1.2);
 }
-input:focused{
-	color: #000;	
-}
-button{
-	color: blue;
-	border: none;
-	padding: 0px;
-	margin-top: 1rem;
-	cursor: pointer;
-	background-color: rgba(0,0,0,0);
-}
-form{
-	width: 100%;
-}
-a {
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: underline;
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+.project-a:hover {text-decoration: none;}
+
+
+
+/* Image Stuff */
+.grayscale {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }

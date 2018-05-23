@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <title>New Computer Working Group</title>
-
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/7f274537-0e0f-4b80-bbb6-735bd3702db5%2Ffavicon.png?1524724724303"/>
+    
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,800" rel="stylesheet"> -->
-    <link rel="shortcut icon" href="f.png" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-
-  <body class="f4 arial pa4">
-    <p class="ma0">New Computer Working Group</p>
-    <img class="w-100" src="/images/ncwg.svg" >
-    <p class="tr">— is a group of people interested in what's next.</p>
-    <img class="w-20" src="/images/cairn.jpg" >
-
-    <p class="heavy">We write guides, stories, and LARP about the future of computation.</p>
-    <p class="heavy">Soon we'll be building new computers you can use for work or play, or both.</p>
-
-    <div class="mt5 heavy">
-      <p>
-        <a href="https://github.com/new-computers/">making here (github) ↪</a>
-      </p>
-      <p>
-        <a class="" href="https://www.are.na/edouard-u/new-computer-working-group">reading here (are.na) ↪</a>
-      </p>
-			<p class="">
-	      <a class="" href="/form.html">listserv here (email) ↪</a>
-	    </p>
-    </div>
+  
+  <body class="center arial black f-ncwg">
+    
+    <!--  Narrative/Intro   -->
+    <section class="w-80 pv5 center">
+      <p class="tl"><span class="ncwg-blue">N</span>ew <span class="ncwg-blue">C</span>omputer <span class="ncwg-blue">W</span>orking <span class="ncwg-blue">G</span>roup</p>
+      
+      <img class="w-100" src="https://cdn.glitch.com/7f274537-0e0f-4b80-bbb6-735bd3702db5%2Fjourney2.svg?1524523175204">
+      
+      <p class="tr">— is a group of people interested in <span class="georgia">“</span>What<span class="georgia">’</span>s After Now<span class="georgia">”</span><span class="georgia">,</span> the alternative form<span class="georgia">,</span> A New Spirit of Computation<span class="georgia">,</span> PC Futures<span class="georgia">,</span> etc<span class="georgia">...</span></p>
+      
+      <img src="https://newcomputers.group/images/cairn.jpg" class="br1 grayscale">
+      
+      <p class="tc">We write guides<span class="georgia">,</span> stories<span class="georgia">,</span> and <span class="georgia i">LARP</span> about the future of computers and people<span class="georgia">.</span></p>
+      <p class="">Soon we<span class="georgia">’</span>ll be building new computers you can use for work or play<span class="georgia">,</span> or anything<span class="georgia">.</span> Every body deserves a new computer<span class="georgia">.</span></p>
+    </section>
+    
+    <!--  Projects, Writing, Works  -->
+    <section class=" w-80 pv5 center bt bw2-ns cf">
+      <!--   Section Title Column     -->
+      <div class="fl w-100 w-50-ns">
+        <p class="fl w-100 dib pv3">Latest Projects<span class="georgia">:</span></p>
+      </div>
+      <!--   Project Column     -->
+      <div class="fl w-100 w-50-ns">
+        <p class="fl w-100"><a href="/ready2use.html" class="dib black pa3 ba bw2-ns br3 br4-ns hover-bg-black hover-white project-a no-underline" ><span class="georgia">“</span>READY TO USE<span class="georgia">”</span></a></p>
+        <p class="fl w-100"><a href="/p2p.html" class="dib black pa3 ba bw2-ns br3 br4-ns hover-bg-black hover-white project-a no-underline">P2P NYC</a></p>
+        <p class="fl w-100"><a href="https://edouard.us/new-computers/" class="dib black pa3 ba bw2-ns br3 br4-ns hover-bg-black hover-white project-a no-underline">New Computers</a></p>
+        <p class="fl w-100"><a href="/seeder.html" class="dib black pa3 ba bw2-ns br3 br4-ns hover-bg-black hover-white project-a no-underline">Seeder</a></p>
+        <p class="fr w-100"><a href="/projects.html" class="black"><span class="georgia">...</span>and Others</a></p>
+      </div>
+    </section>
+    
+    <!--  Structured Content   -->
+    <section class=" w-80 pv5 mb5 center bt bw2-ns cf"> 
+      <!--   Section Title Column     -->
+      <div class="fl w-100 w-50-ns">
+        <p class="fl w-100">Sundry Links<span class="georgia">:</span></p>
+      </div>
+      <!--   Links + Newsletter Column     -->
+      <div class="fl w-100 w-50-ns">
+        <p class="fl w-50">
+          <a href="https://github.com/new-computers/" class="black">Github &#x21AC;&#xFE0E</a>
+        </p>
+        <p class="fl w-50">
+          <a href="https://www.are.na/edouard-u/new-computer-working-group" class="black">Are<span class="georgia">.</span>na &#x21AC;&#xFE0E</a>
+        </p>
+        
+        <!--    Newsletter Form     -->
+        <p class="fl w-100">
+          We<span class="georgia">’</span>ll send letters/updates<span class="georgia">:</span>
+        </p>
+        <form enctype="application/x-www-form-urlencoded " method="post" class="">
+          <input name="name" required="true" type="text" placeholder="Name here" value="" class="w-100 ba bw2 b--white ncwg-red ">
+          <input name="address" type="email" required="true" placeholder="Email address here" value="" class="w-100 ba bw2 b--white ncwg-red ">
+          <div>
+            <input name="question" type="text" placeholder="What's a new computer?" id="question" class="w-100 ba bw2 b--white ncwg-red ">
+        </div>
+          <button type="submit" class="w-100 ba bw2-ns mt2 mt5-ns b--black pointer">Join Listserv</button>
+        </form>
+      </div>
+    </section>
+    
   </body>
+  
 </html>

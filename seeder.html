@@ -1,27 +1,50 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Seeder</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <head>
+    <title>New Computer Working Group</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body class="center arial black f-ncwg">
+    <section class="w-80 pv5 center">
+      <p class="tl">Seeder</p>
+    </section>
+    <section class=" w-80 pv5 mb5 center bt bw2-ns cf"> 
+      <!--   Content Block    -->
+      <div class="fl w-100 w-50-ns">
+        <p class="fl w-80">1-line Install:</p>
+      </div>
+      <div class="fl w-100">
+        <p class="fl w-100"><code class="bg-light-gray">$ curl -o- https://raw.githubusercontent.com/new-computers/seeder/master/install.sh | bash
+        </code></p>
+        <img class="fl w-100" src="images/seeder.jpg">
+      </div>
+      <!--   Content Block    -->
+      <div class="fl w-100 w-50-ns">
+        <p class="fl w-100">Info</p>
+      </div>
+      <div class="fl w-100 w-50-ns">
+        <p class="fl w-100">
+          Plug-and-play Raspberry Pi peer for Dat archives.
+          Keep your sites online and accessible on the distributed web.
+        </p>
+      </div>
+    </section>
 
-		<link rel="stylesheet" href="/style.css">
-	</head>
-	<body>
-		<header class="1">
-			<a href="/" class="nbb">Seeder</a>
-			<a class="fr" href="https://newcomputers.group">NCWG ↗</a>
-		</header>
-		<div class="1/2 m-1 fl dib drop">
-			<p class="pb2"><code>$ curl -o- https://git.io/vxpck | bash</code></p>
-			<p>plug-and-play <a href="https://raspberrypi.org">Raspberry Pi</a> peer for <a href="https://datproject.org">Dat</a> archives</p>
-			<p>keeping sites accessible in a low-cost, decentralized way</p>
-			<p><a href="https://github.com/new-computers/seeder">open-source</a></p>
-			<div class="todo">
-				<p>http mirroring ― soon</p>
-				<p>collective seeding ― soon</p>
-			</div>
-		</div>
-		<div class="1/2 m-1 fl dib">
-			<img class="1" src="/images/image.png">
-		</div>
-	</body>
+    <section>
+      <div class=" w-80 pv5 center bt bw2-ns cf">
+        <p class="fl w-50"><a href="/" class="">Home</a></p>
+        <!-- <p class="fl w-50"><a href="https://github.com/new-computers/dat-pi" class="">Related: dat-pi ↪</a></p> -->
+      </div>
+    </section>
+    
+  </body>
+  
 </html>
